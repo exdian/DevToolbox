@@ -1,0 +1,48 @@
+﻿<Window x:Class="IsoPacker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IsoPacker"
+        mc:Ignorable="d"
+        Title="ISO 打包工具" Height="450" Width="700"
+        WindowStartupLocation="CenterScreen">
+    
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- 操作按钮区 -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,15">
+            <Button x:Name="SelectFilesButton" Content="选择文件…" 
+                    Width="110" Height="34" Margin="0,0,10,0"
+                    Click="SelectFilesButton_Click"/>
+            <Button x:Name="SelectFolderButton" Content="选择文件夹…" 
+                    Width="110" Height="34" Margin="0,0,10,0"
+                    Click="SelectFolderButton_Click"/>
+            <Button x:Name="ClearButton" Content="清空列表" 
+                    Width="90" Height="34"
+                    Click="ClearButton_Click"/>
+        </StackPanel>
+
+        <!-- 已选内容预览 -->
+        <GroupBox Grid.Row="1" Header="待打包内容" Margin="0,0,0,15">
+            <ListBox x:Name="SelectedItemsListBox" 
+                     ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                     ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        </GroupBox>
+
+        <!-- 打包操作 -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <TextBlock x:Name="StatusTextBlock" 
+                       VerticalAlignment="Center" Margin="0,0,15,0" 
+                       Foreground="Gray"/>
+            <Button x:Name="PackIsoButton" Content="打包为 ISO…" 
+                    Width="130" Height="38" FontWeight="SemiBold"
+                    Click="PackIsoButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

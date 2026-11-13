@@ -1,0 +1,24 @@
+<Solution>
+  <Folder Name="/ClassLibrary/">
+    <Project Path="ClassLibrary/CSharpCode/CSharpCode.csproj" />
+    <Project Path="ClassLibrary/FileHeader/FileHeader.csproj" />
+    <Project Path="ClassLibrary/FileTree/FileTree.csproj" />
+    <Project Path="ClassLibrary/IcoFile/IcoFile.csproj" />
+    <Project Path="ClassLibrary/ImageFunction/ImageFunction.csproj" />
+    <Project Path="ClassLibrary/IsoFile/IsoFile.csproj" />
+    <Project Path="ClassLibrary/LineSegmentIntersection/LineSegmentIntersection.csproj" />
+  </Folder>
+  <Folder Name="/ConsoleApp/">
+    <Project Path="ConsoleApp/CSharpPublicApiExtractor/CSharpPublicApiExtractor.csproj" />
+    <Project Path="ConsoleApp/FileHeaderReader/FileHeaderReader.csproj" />
+    <Project Path="ConsoleApp/FileTreeToJson/FileTreeToJson.csproj" />
+    <Project Path="ConsoleApp/IcoFileMaker/IcoFileMaker.csproj" />
+    <Project Path="ConsoleApp/ImageMetadataCleaner/ImageMetadataCleaner.csproj" />
+    <Project Path="ConsoleApp/IsoPacker/IsoPacker.csproj" />
+    <Project Path="ConsoleApp/LineSegmentIntersector/LineSegmentIntersector.csproj" />
+  </Folder>
+  <Folder Name="/WpfApp/">
+    <Project Path="WpfApp/ImageMetadataCleaner/ImageMetadataCleaner.csproj" />
+    <Project Path="WpfApp/IsoPacker/IsoPacker.csproj" />
+  </Folder>
+</Solution>
